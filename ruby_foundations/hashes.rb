@@ -58,6 +58,82 @@ nil
 }
 
 
+>> treehouse
+{
+    "business_name" => "Treehouse",
+         "location" => "Treehouse Island",
+     "phone_number" => "555-555-555"
+}
+>> business_name = treehouse.delete("business_name")
+"Treehouse"
+>> treehouse
+{
+        "location" => "Treehouse Island",
+    "phone_number" => "555-555-555"
+}
+
+
+treehouse.to_a
+[
+    [0] [
+        [0] "business_name",
+        [1] "Treehouse"
+    ],
+    [1] [
+        [0] "location",
+        [1] "Treehouse Island"
+    ],
+    [2] [
+        [0] "phone_number",
+        [1] "555-555-555"
+    ]
+]
+
+
+array = treehouse.to_a
+[
+    [0] [
+        [0] "business_name",
+        [1] "Treehouse"
+    ],
+    [1] [
+        [0] "location",
+        [1] "Treehouse Island"
+    ],
+    [2] [
+        [0] "phone_number",
+        [1] "555-555-555"
+    ]
+]
+>> treehouse
+{
+    "business_name" => "Treehouse",
+         "location" => "Treehouse Island",
+     "phone_number" => "555-555-555"
+}
+>> array
+[
+    [0] [
+        [0] "business_name",
+        [1] "Treehouse"
+    ],
+    [1] [
+        [0] "location",
+        [1] "Treehouse Island"
+    ],
+    [2] [
+        [0] "phone_number",
+        [1] "555-555-555"
+    ]
+]
+
+
+>> treehouse.delete_if {|key, value|key == "location"}
+{
+    "business_name" => "Treehouse",
+     "phone_number" => "555-555-555"
+}
+
 
 
 
