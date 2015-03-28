@@ -1,20 +1,26 @@
-class Hello
-  def initialize(name)
-    @name = name
-  end
-end
-
-
 module SayHello
+  def say_something
+    puts "Something"
+  end
+
+
   def say_hello
     puts "hello #{@name}"
   end
 end
 
 
-hello = Hello.new("Libby")
-hello.extend SayHello
+class Hello
+  extend SayHello
+  include SayHello
+  def initialize(name)
+    @name = name
+  end
+end
 
-hello.say_hello
 
+# hello = Hello.new("Libby")
 
+# hello.say_hello
+
+Hello.say_something
