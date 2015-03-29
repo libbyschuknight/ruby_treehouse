@@ -1,0 +1,3 @@
+# Logfile created on 2015-03-29 15:44:00 +1300 by logger.rb/41954
+I, [2015-03-29T15:44:00.181620 #5920]  INFO -- BankAccount (Libby SK): Depositing 100
+I, [2015-03-29T15:44:00.181727 #5920]  INFO -- BankAccount (Libby SK): Withdrawing 50
