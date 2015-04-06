@@ -24,13 +24,20 @@ class Name
     @title + " " + full_name
   end
 
+  def to_s
+    full_name_with_title
+  end
+
 end
 
-Libby = Name.new("Ms", "Libby", "J", "SchuKnight")
-puts Libby.full_name_with_title
+name = Name.new("Ms", "Libby", "J", "SchuKnight")
+# puts name.full_name_with_title
 
-mist = Name.new("Monster", "Misty", "MooMoo", "SchuKnight")
-puts mist.full_name_with_title
+# mist = Name.new("Monster", "Misty", "MooMoo", "SchuKnight")
+# puts mist.full_name_with_title
+
+puts name
+puts name.inspect
 
 
 # puts "Title: #{name.title}"
